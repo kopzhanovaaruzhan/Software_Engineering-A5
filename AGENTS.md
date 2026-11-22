@@ -36,6 +36,7 @@ npm run build       # typecheck + production build
 
 - Installing, removing, or upgrading any dependency (`npm install <pkg>`,
   `npm uninstall`, `npm update`).
+- Any form of npm audit fix, npm dedupe or npm prune.
 - Changing package.json, tsconfig, vite/vitest, eslint, or Tailwind configs.
 
 ## Forbidden actions
