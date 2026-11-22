@@ -60,7 +60,7 @@ npm run build       # typecheck + production build
 
 ## Test expectations
 
-- `npm run test` must pass with all 21 tests in `src/lib/tasks.test.ts` green.
+- 'npm run test' must pass; all existing tests stay green (21 at baseline) in `src/lib/tasks.test.ts`.
 - Any behavior change in add, toggle, delete, filter, or load/save must come
   with new or updated tests in the same change.
 - localStorage is available to tests (jsdom environment).
@@ -75,5 +75,8 @@ npm run typecheck
 npm run test
 npm run build
 ```
-
 Do not report a task as done while any of them fails.
+
+A human reviews every diff before commit or merge; the agent reports changed files and exact command results.
+
+
